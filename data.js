@@ -275,12 +275,21 @@ window.CAMP_DATA = {
       "image": "assets/gear-53.jpg"
     },
     {
+      "id": "gear-51",
+      "name": "コーヒードリップ",
+      "quantity": "1個",
+      "note": "",
+      "category": "kitchen",
+      "no": 25,
+      "image": "assets/gear-51.jpg"
+    },
+    {
       "id": "gear-12",
       "name": "ガストーチ・ガスボンベ",
       "quantity": "1セット",
       "note": "トーチとガスボンベ。",
       "category": "fire",
-      "no": 25,
+      "no": 26,
       "image": "assets/gear-12.jpg"
     },
     {
@@ -289,7 +298,7 @@ window.CAMP_DATA = {
       "quantity": "1本",
       "note": "",
       "category": "fire",
-      "no": 26,
+      "no": 27,
       "image": "assets/gear-20.jpg"
     },
     {
@@ -298,7 +307,7 @@ window.CAMP_DATA = {
       "quantity": "1本",
       "note": "",
       "category": "fire",
-      "no": 27,
+      "no": 28,
       "image": "assets/gear-32.jpg"
     },
     {
@@ -307,7 +316,7 @@ window.CAMP_DATA = {
       "quantity": "1枚",
       "note": "",
       "category": "fire",
-      "no": 28,
+      "no": 29,
       "image": "assets/gear-34.jpg"
     },
     {
@@ -316,7 +325,7 @@ window.CAMP_DATA = {
       "quantity": "1本",
       "note": "",
       "category": "fire",
-      "no": 29,
+      "no": 30,
       "image": "assets/gear-37.jpg"
     },
     {
@@ -325,7 +334,7 @@ window.CAMP_DATA = {
       "quantity": "1本",
       "note": "",
       "category": "fire",
-      "no": 30,
+      "no": 31,
       "image": "assets/gear-38.jpg"
     },
     {
@@ -334,7 +343,7 @@ window.CAMP_DATA = {
       "quantity": "1個",
       "note": "",
       "category": "fire",
-      "no": 31,
+      "no": 32,
       "image": "assets/gear-39.jpg"
     },
     {
@@ -343,7 +352,7 @@ window.CAMP_DATA = {
       "quantity": "1台",
       "note": "",
       "category": "fire",
-      "no": 32,
+      "no": 33,
       "image": "assets/gear-40.jpg"
     },
     {
@@ -352,7 +361,7 @@ window.CAMP_DATA = {
       "quantity": "1個",
       "note": "収納バッグを含む。",
       "category": "fire",
-      "no": 33,
+      "no": 34,
       "image": "assets/gear-41.jpg"
     },
     {
@@ -361,7 +370,7 @@ window.CAMP_DATA = {
       "quantity": "1式",
       "note": "薪の本数・量は要確認。",
       "category": "fire",
-      "no": 34,
+      "no": 35,
       "image": "assets/gear-43.jpg"
     },
     {
@@ -370,17 +379,8 @@ window.CAMP_DATA = {
       "quantity": "1組",
       "note": "",
       "category": "fire",
-      "no": 35,
-      "image": "assets/gear-49.jpg"
-    },
-    {
-      "id": "gear-51",
-      "name": "小型焚き火台",
-      "quantity": "1台",
-      "note": "",
-      "category": "fire",
       "no": 36,
-      "image": "assets/gear-51.jpg"
+      "image": "assets/gear-49.jpg"
     },
     {
       "id": "gear-01",
