@@ -128,7 +128,7 @@ window.CAMP_DATA = {
       "note": "",
       "category": "setup",
       "no": 8,
-      "image": "assets/gear-57.jpg"
+      "image": "assets/gear-57.webp"
     },
     {
       "id": "gear-30",

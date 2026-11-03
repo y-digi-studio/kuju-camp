@@ -18,7 +18,8 @@ favicon.svg
 .gitignore
 README.md
 assets/
-  gear-00.jpg ... gear-57.jpg
+  gear-00.jpg ... gear-56.jpg
+  gear-57.webp
 ```
 
 GitHub Pagesの設定方法: https://docs.github.com/en/pages/getting-started-with-github-pages/configuring-a-publishing-source-for-your-github-pages-site
@@ -44,6 +45,6 @@ python3 -m http.server 8765 --bind 127.0.0.1
 
 `data.js` に名称・数量・カテゴリー・備考・写真パスを保存しています。数量は写真から判断した仮入力を含みます。Notionとの自動同期はありません。
 
-写真は `assets/` に格納した900px以下の軽量JPEGです。画像の位置情報などのExifを除いています。外部ライブラリ、CDN、ログイン、外部APIへの通信は不要です。
+写真は `assets/` に格納した900px以下の軽量JPEG/WebPです。透明な写真は透明部分を保って保存します。画像の位置情報などのExifを除いています。外部ライブラリ、CDN、ログイン、外部APIへの通信は不要です。
 
 親フォルダの元写真、バックアップ、作業用設定は、この公開用フォルダに含めていません。
