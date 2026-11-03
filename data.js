@@ -212,21 +212,12 @@ window.CAMP_DATA = {
       "image": "assets/gear-15.jpg"
     },
     {
-      "id": "gear-16",
-      "name": "ソフトクーラーバッグ",
-      "quantity": "1個",
-      "note": "",
-      "category": "kitchen",
-      "no": 18,
-      "image": "assets/gear-16.jpg"
-    },
-    {
       "id": "gear-18",
       "name": "チタンマグカップ",
       "quantity": "2個",
       "note": "",
       "category": "kitchen",
-      "no": 19,
+      "no": 18,
       "image": "assets/gear-18.jpg"
     },
     {
@@ -235,7 +226,7 @@ window.CAMP_DATA = {
       "quantity": "1個",
       "note": "",
       "category": "kitchen",
-      "no": 20,
+      "no": 19,
       "image": "assets/gear-22.jpg"
     },
     {
@@ -244,7 +235,7 @@ window.CAMP_DATA = {
       "quantity": "1個",
       "note": "",
       "category": "kitchen",
-      "no": 21,
+      "no": 20,
       "image": "assets/gear-28.jpg"
     },
     {
@@ -253,7 +244,7 @@ window.CAMP_DATA = {
       "quantity": "1台",
       "note": "",
       "category": "kitchen",
-      "no": 22,
+      "no": 21,
       "image": "assets/gear-45.jpg"
     },
     {
@@ -262,7 +253,7 @@ window.CAMP_DATA = {
       "quantity": "1セット",
       "note": "セット内の個数は要確認。",
       "category": "kitchen",
-      "no": 23,
+      "no": 22,
       "image": "assets/gear-50.jpg"
     },
     {
@@ -271,7 +262,7 @@ window.CAMP_DATA = {
       "quantity": "1個",
       "note": "",
       "category": "kitchen",
-      "no": 24,
+      "no": 23,
       "image": "assets/gear-52.jpg"
     },
     {
@@ -280,7 +271,7 @@ window.CAMP_DATA = {
       "quantity": "4個",
       "note": "",
       "category": "kitchen",
-      "no": 25,
+      "no": 24,
       "image": "assets/gear-53.jpg"
     },
     {
@@ -289,7 +280,7 @@ window.CAMP_DATA = {
       "quantity": "1セット",
       "note": "トーチとガスボンベ。",
       "category": "fire",
-      "no": 26,
+      "no": 25,
       "image": "assets/gear-12.jpg"
     },
     {
@@ -298,7 +289,7 @@ window.CAMP_DATA = {
       "quantity": "1本",
       "note": "",
       "category": "fire",
-      "no": 27,
+      "no": 26,
       "image": "assets/gear-20.jpg"
     },
     {
@@ -307,7 +298,7 @@ window.CAMP_DATA = {
       "quantity": "1本",
       "note": "",
       "category": "fire",
-      "no": 28,
+      "no": 27,
       "image": "assets/gear-32.jpg"
     },
     {
@@ -316,7 +307,7 @@ window.CAMP_DATA = {
       "quantity": "1枚",
       "note": "",
       "category": "fire",
-      "no": 29,
+      "no": 28,
       "image": "assets/gear-34.jpg"
     },
     {
@@ -325,7 +316,7 @@ window.CAMP_DATA = {
       "quantity": "1本",
       "note": "",
       "category": "fire",
-      "no": 30,
+      "no": 29,
       "image": "assets/gear-37.jpg"
     },
     {
@@ -334,7 +325,7 @@ window.CAMP_DATA = {
       "quantity": "1本",
       "note": "",
       "category": "fire",
-      "no": 31,
+      "no": 30,
       "image": "assets/gear-38.jpg"
     },
     {
@@ -343,7 +334,7 @@ window.CAMP_DATA = {
       "quantity": "1個",
       "note": "",
       "category": "fire",
-      "no": 32,
+      "no": 31,
       "image": "assets/gear-39.jpg"
     },
     {
@@ -352,7 +343,7 @@ window.CAMP_DATA = {
       "quantity": "1台",
       "note": "",
       "category": "fire",
-      "no": 33,
+      "no": 32,
       "image": "assets/gear-40.jpg"
     },
     {
@@ -361,7 +352,7 @@ window.CAMP_DATA = {
       "quantity": "1個",
       "note": "収納バッグを含む。",
       "category": "fire",
-      "no": 34,
+      "no": 33,
       "image": "assets/gear-41.jpg"
     },
     {
@@ -370,7 +361,7 @@ window.CAMP_DATA = {
       "quantity": "1式",
       "note": "薪の本数・量は要確認。",
       "category": "fire",
-      "no": 35,
+      "no": 34,
       "image": "assets/gear-43.jpg"
     },
     {
@@ -379,7 +370,7 @@ window.CAMP_DATA = {
       "quantity": "1組",
       "note": "",
       "category": "fire",
-      "no": 36,
+      "no": 35,
       "image": "assets/gear-49.jpg"
     },
     {
@@ -388,7 +379,7 @@ window.CAMP_DATA = {
       "quantity": "1台",
       "note": "",
       "category": "fire",
-      "no": 37,
+      "no": 36,
       "image": "assets/gear-51.jpg"
     },
     {
@@ -397,7 +388,7 @@ window.CAMP_DATA = {
       "quantity": "1個",
       "note": "",
       "category": "power",
-      "no": 38,
+      "no": 37,
       "image": "assets/gear-01.jpg"
     },
     {
@@ -406,7 +397,7 @@ window.CAMP_DATA = {
       "quantity": "1個",
       "note": "",
       "category": "power",
-      "no": 39,
+      "no": 38,
       "image": "assets/gear-02.jpg"
     },
     {
@@ -415,7 +406,7 @@ window.CAMP_DATA = {
       "quantity": "1台",
       "note": "",
       "category": "power",
-      "no": 40,
+      "no": 39,
       "image": "assets/gear-23.jpg"
     },
     {
@@ -424,7 +415,7 @@ window.CAMP_DATA = {
       "quantity": "1台",
       "note": "",
       "category": "power",
-      "no": 41,
+      "no": 40,
       "image": "assets/gear-25.jpg"
     },
     {
@@ -433,7 +424,7 @@ window.CAMP_DATA = {
       "quantity": "1個",
       "note": "",
       "category": "power",
-      "no": 42,
+      "no": 41,
       "image": "assets/gear-31.jpg"
     },
     {
@@ -442,8 +433,17 @@ window.CAMP_DATA = {
       "quantity": "2本",
       "note": "",
       "category": "power",
-      "no": 43,
+      "no": 42,
       "image": "assets/gear-56.jpg"
+    },
+    {
+      "id": "gear-16",
+      "name": "ソフトクーラーバッグ",
+      "quantity": "1個",
+      "note": "",
+      "category": "storage",
+      "no": 43,
+      "image": "assets/gear-16.jpg"
     },
     {
       "id": "gear-26",
