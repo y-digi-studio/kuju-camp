@@ -188,6 +188,18 @@ window.CAMP_DATA = {
       "image": "assets/gear-57.webp"
     },
     {
+      "id": "gear-61",
+      "name": "レジャーシート",
+      "quantity": "1枚",
+      "note": "写真未登録。数量は仮に1枚（要確認）。",
+      "category": "setup",
+      "storage": "ルーフボックス",
+      "availability": "未確認",
+      "loading": "未確認",
+      "no": 62,
+      "image": null
+    },
+    {
       "id": "gear-30",
       "name": "寝袋",
       "quantity": "2個",
