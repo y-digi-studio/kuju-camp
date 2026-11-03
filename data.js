@@ -189,7 +189,7 @@ window.CAMP_DATA = {
     },
     {
       "id": "gear-61",
-      "name": "レジャーシート",
+      "name": "ブルーシート",
       "quantity": "1枚",
       "note": "写真未登録。数量は仮に1枚（要確認）。",
       "category": "setup",
