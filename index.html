@@ -5,8 +5,8 @@
 <meta name="theme-color" content="#294d3e">
 <meta name="description" content="九重キャンプの持ち物を、カテゴリーから写真で辿る道具マップ。62品目の写真・数量・備考をひと目で。">
 <title>九重キャンプ | 道具マップ</title>
-<link rel="icon" href="favicon.svg" type="image/svg+xml"><link rel="stylesheet" href="style.css?v=6">
-<script src="data.js?v=6" defer></script><script src="app.js?v=6" defer></script>
+<link rel="icon" href="favicon.svg" type="image/svg+xml"><link rel="stylesheet" href="style.css?v=7">
+<script src="data.js?v=7" defer></script><script src="app.js?v=7" defer></script>
 </head>
 <body>
 <a class="skip" href="#explorer">道具を探す</a>
@@ -20,10 +20,10 @@
 <div id="live-status" class="sr-only" role="status" aria-live="polite"></div>
 <div id="map-panel"><div class="map-caption"><span><span class="map-dot"></span><span id="map-instruction">カテゴリーを選んで、道具へ。</span></span><button id="map-home" hidden>全体マップに戻る ↗</button></div><div id="mindmap" class="mindmap" aria-label="カテゴリーのマインドマップ"></div><div class="map-footer"><span>● キャンプ → カテゴリー → 道具</span><span>気になるノードをタップ</span></div></div>
 <section id="results" aria-label="物品一覧"></section>
-<div class="usage-note"><span aria-hidden="true">↳</span><p>収納先・数量・確認状況は2026年11月3日のExcelを反映しています。画像のない未確認の荷物も掲載しています。変更はこの端末からは保存されません。</p></div>
+<div class="usage-note"><span aria-hidden="true">↳</span><p>収納先・数量・確認状況は2026年11月3日のExcelを反映しています。画像のない未確認の荷物も掲載しています。有無・積込確認は道具の詳細で選択でき、このブラウザーに保存されます。</p></div>
 </section>
 </main>
 <footer><a class="footer-brand" href="#">KUJU CAMP</a><span>道具を揃えて、いいキャンプを。</span><span data-gear-summary>62 GEAR / 7 CATEGORIES</span></footer>
-<dialog id="item-dialog" aria-labelledby="detail-name"><div class="dialog-top"><span id="detail-category"></span><button class="icon-button" id="close-dialog" aria-label="詳細を閉じる">✕</button></div><div class="detail-layout"><div class="detail-photo"><img id="detail-image" alt=""><div id="detail-photo-missing" class="detail-photo-missing" hidden><span aria-hidden="true">▧</span><strong>写真未登録</strong><p>画像はまだ登録されていません。</p></div></div><div class="detail-info"><p class="eyebrow" id="detail-number"></p><h2 id="detail-name"></h2><dl><div><dt>収納場所・ボックス</dt><dd id="detail-storage"></dd></div><div><dt>有無確認</dt><dd id="detail-availability"></dd></div><div><dt>積込確認</dt><dd id="detail-loading"></dd></div><div><dt>数量</dt><dd id="detail-quantity"></dd></div><div><dt>備考</dt><dd id="detail-note"></dd></div></dl><p class="detail-hint">写真の道具を、準備の参考に。</p></div></div><div class="dialog-bottom"><button id="previous-item">← 前の道具</button><span id="detail-position"></span><button id="next-item">次の道具 →</button></div></dialog>
+<dialog id="item-dialog" aria-labelledby="detail-name"><div class="dialog-top"><span id="detail-category"></span><button class="icon-button" id="close-dialog" aria-label="詳細を閉じる">✕</button></div><div class="detail-layout"><div class="detail-photo"><img id="detail-image" alt=""><div id="detail-photo-missing" class="detail-photo-missing" hidden><span aria-hidden="true">▧</span><strong>写真未登録</strong><p>画像はまだ登録されていません。</p></div></div><div class="detail-info"><p class="eyebrow" id="detail-number"></p><h2 id="detail-name"></h2><dl><div><dt>収納場所・ボックス</dt><dd id="detail-storage"></dd></div><div><dt><label for="detail-availability">有無確認</label></dt><dd><select id="detail-availability"><option>未確認</option><option>あり</option><option>なし</option><option>今回不要</option></select></dd></div><div><dt><label for="detail-loading">積込確認</label></dt><dd><select id="detail-loading"><option>未確認</option><option>積込済</option><option>未積込</option><option>今回不要</option></select></dd></div><div><dt>数量</dt><dd id="detail-quantity"></dd></div><div><dt>備考</dt><dd id="detail-note"></dd></div></dl><p class="check-save-hint">選択内容はこのブラウザーに自動保存されます。ほかの端末・仲間の画面やExcelには自動反映されません。</p><p id="check-save-status" class="check-save-status" role="status" aria-live="polite"></p></div></div><div class="dialog-bottom"><button id="previous-item">← 前の道具</button><span id="detail-position"></span><button id="next-item">次の道具 →</button></div></dialog>
 <noscript><p>マップの操作にはJavaScriptを有効にしてください。</p></noscript>
 </body></html>
