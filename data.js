@@ -87,6 +87,12 @@ window.CAMP_DATA = {
       "name": "車両本体",
       "icon": "🚙",
       "description": "収納対象外の車両"
+    },
+    {
+      "id": "cooler",
+      "name": "ソフトクーラーバッグ",
+      "icon": "🧺",
+      "description": "トランクに積むバッグの中"
     }
   ],
   "inventoryUpdated": "2026-11-03",
@@ -191,13 +197,13 @@ window.CAMP_DATA = {
       "id": "gear-61",
       "name": "ブルーシート",
       "quantity": "1枚",
-      "note": "写真未登録。数量は仮に1枚（要確認）。",
+      "note": "数量は仮に1枚（要確認）。",
       "category": "setup",
       "storage": "ルーフボックス",
       "availability": "未確認",
       "loading": "未確認",
       "no": 62,
-      "image": null
+      "image": "assets/gear-61.jpg"
     },
     {
       "id": "gear-30",
@@ -404,6 +410,30 @@ window.CAMP_DATA = {
       "image": "assets/gear-51.jpg"
     },
     {
+      "id": "gear-63",
+      "name": "トング",
+      "quantity": "1セット",
+      "note": "セット内の本数は要確認。",
+      "category": "kitchen",
+      "storage": "ソフトクーラーバッグ",
+      "availability": "未確認",
+      "loading": "未確認",
+      "no": 64,
+      "image": "assets/gear-63.jpg"
+    },
+    {
+      "id": "gear-64",
+      "name": "洗剤・スポンジ",
+      "quantity": "1セット",
+      "note": "食器用洗剤1本とスポンジ1個。",
+      "category": "kitchen",
+      "storage": "ソフトクーラーバッグ",
+      "availability": "未確認",
+      "loading": "未確認",
+      "no": 65,
+      "image": "assets/gear-64.jpg"
+    },
+    {
       "id": "gear-12",
       "name": "ガストーチ・ガスボンベ",
       "quantity": "1セット",
@@ -608,6 +638,18 @@ window.CAMP_DATA = {
       "image": "assets/gear-56.jpg"
     },
     {
+      "id": "gear-62",
+      "name": "単3電池",
+      "quantity": "8本",
+      "note": "写真で8本確認。",
+      "category": "power",
+      "storage": "ポタ電用バッグ",
+      "availability": "未確認",
+      "loading": "未確認",
+      "no": 63,
+      "image": "assets/gear-62.jpg"
+    },
+    {
       "id": "gear-16",
       "name": "ソフトクーラーバッグ",
       "quantity": "1個",
@@ -764,6 +806,18 @@ window.CAMP_DATA = {
       "image": null
     },
     {
+      "id": "gear-65",
+      "name": "ビニル袋",
+      "quantity": "1箱",
+      "note": "箱の表示は80枚入り。残数は要確認。",
+      "category": "storage",
+      "storage": "ソフトクーラーバッグ",
+      "availability": "未確認",
+      "loading": "未確認",
+      "no": 66,
+      "image": "assets/gear-65.jpg"
+    },
+    {
       "id": "gear-08",
       "name": "エアマット",
       "quantity": "1枚",
@@ -833,7 +887,7 @@ window.CAMP_DATA = {
       "availability": "未確認",
       "loading": "未確認",
       "no": 59,
-      "image": null
+      "image": "assets/gear-58.jpg"
     }
   ]
 };

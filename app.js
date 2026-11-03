@@ -8,6 +8,7 @@ try{const parsed=JSON.parse(localStorage.getItem(CHECKS_KEY)||'{}');if(parsed&&t
 for(const item of items){for(const field of Object.keys(checkOptions)){const value=savedChecks[item.id]?.[field];if(checkOptions[field].includes(value))item[field]=value;}}
 document.querySelectorAll('[data-item-count]').forEach(e=>e.textContent=items.length);
 document.querySelectorAll('[data-category-count]').forEach(e=>e.textContent=categories.length);
+document.querySelectorAll('.photo-label').forEach(e=>e.textContent='写真'+items.filter(x=>x.image).length+'品目・写真未登録'+items.filter(x=>!x.image).length+'品目');
 document.querySelectorAll('[data-gear-summary]').forEach(e=>e.textContent=items.length+' GEAR / '+categories.length+' CATEGORIES');
 const $=s=>document.querySelector(s), esc=s=>String(s).replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
 const byCat=id=>items.filter(x=>x.category===id), catBy=id=>categories.find(c=>c.id===id);
@@ -27,7 +28,7 @@ function setState({category=selected,view=mode,q=query,group=grouping}={},push=t
 function goCategory(id){setState({category:id,q:''});$('#explorer').scrollIntoView({block:'start',behavior:matchMedia('(prefers-reduced-motion:reduce)').matches?'auto':'smooth'});}
 function path(x1,y1,x2,y2){const mx=(x1+x2)/2;return `<path d="M${x1},${y1} C${mx},${y1} ${mx},${y2} ${x2},${y2}"/>`;}
 function lines(points,root){return `<svg class="map-lines" viewBox="0 0 1000 1000" preserveAspectRatio="none" aria-hidden="true">${points.map(([x,y])=>path(root[0]*10,root[1]*10,x*10,y*10)).join('')}</svg>`;}
-function renderMap(){const map=$('#mindmap');if(!selected){const pos=grouping==='storage'?[[25,15],[75,15],[25,72],[75,72],[50,91]]:mobile.matches?[[25,10],[75,10],[75,28],[75,70],[25,70],[25,28],[50,91]]:[[25,15],[75,15],[83,46],[75,79],[25,79],[17,46],[50,90]];
+function renderMap(){const map=$('#mindmap');if(!selected){const pos=grouping==='storage'?(storages.length===6?[[25,12],[75,12],[17,46],[83,46],[25,82],[75,82]]:[[25,15],[75,15],[25,72],[75,72],[50,91]]):mobile.matches?[[25,10],[75,10],[75,28],[75,70],[25,70],[25,28],[50,91]]:[[25,15],[75,15],[83,46],[75,79],[25,79],[17,46],[50,90]];
 // Leave a little breathing room beneath the last branch.
 if(grouping==='category'){if(mobile.matches)pos[6]=[50,91];else pos[6]=[50,90];}
 map.className='mindmap';map.style.removeProperty('--mobile-height');map.innerHTML=lines(pos,[50,mobile.matches?47:50])+`<div class="map-root">${mountain}<strong>九重キャンプ</strong><small>${items.length} GEAR / ${groups().length} ${grouping==='storage'?'STORAGE GROUPS':'CATEGORIES'}</small></div>`+groups().map((c,i)=>`<button class="map-node category-node" style="--x:${pos[i][0]}%;--y:${pos[i][1]}%" data-category="${c.id}" aria-label="${esc(c.name)}、${byGroup(c.id).length}品目"><span class="node-top"><span class="node-icon" aria-hidden="true">${c.icon}</span><span class="node-count">${byGroup(c.id).length} 品目</span></span><strong>${esc(c.name)}</strong><small>${esc(c.description)}</small><span class="node-arrow" aria-hidden="true">↗</span></button>`).join('');
