@@ -1,0 +1,49 @@
+# 九重キャンプ 道具マップ
+
+58品目を7カテゴリーから辿る写真付きホームページです。マップ、カテゴリー別一覧、全品目検索、数量・備考付きの写真詳細を利用できます。
+
+## 公開方法
+
+このフォルダの**中身**をGitHubリポジトリのルートへ配置し、Settings → Pages → Sourceで「Deploy from a branch」を選び、`main` / `/(root)` を保存してください。ビルド作業・npm・APIキーは不要です。
+
+フォルダ構成は次の通りです。ZIPファイルそのものではなく、解凍した中身をアップロードします。
+
+```text
+index.html
+style.css
+app.js
+data.js
+favicon.svg
+.nojekyll
+.gitignore
+README.md
+assets/
+  gear-00.jpg ... gear-57.jpg
+```
+
+GitHub Pagesの設定方法: https://docs.github.com/en/pages/getting-started-with-github-pages/configuring-a-publishing-source-for-your-github-pages-site
+
+## ローカルでの確認
+
+このフォルダ内で次を実行し、表示されたローカルURLをブラウザで開きます。
+
+```sh
+python3 -m http.server 8765 --bind 127.0.0.1
+```
+
+## 操作
+
+- マップのカテゴリーを選び、物品の写真を押すと詳細が開きます。
+- 「一覧」はカテゴリーごとに折りたためます。
+- 検索はすべてのカテゴリーが対象です。
+- 詳細画面の左右ボタンで、同じカテゴリーの道具を辿れます。
+- スマートフォン幅では、枝を縦に並べて表示します。
+- ブラウザの戻る操作と、URLでのカテゴリー・物品指定に対応します。
+
+## データ
+
+`data.js` に名称・数量・カテゴリー・備考・写真パスを保存しています。数量は写真から判断した仮入力を含みます。Notionとの自動同期はありません。
+
+写真は `assets/` に格納した900px以下の軽量JPEGです。画像の位置情報などのExifを除いています。外部ライブラリ、CDN、ログイン、外部APIへの通信は不要です。
+
+親フォルダの元写真、バックアップ、作業用設定は、この公開用フォルダに含めていません。
