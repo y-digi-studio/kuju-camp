@@ -428,21 +428,12 @@ window.CAMP_DATA = {
       "image": "assets/gear-25.jpg"
     },
     {
-      "id": "gear-26",
-      "name": "ポータブル電源用バッグ",
-      "quantity": "1個",
-      "note": "ポータブル電源は別項目。",
-      "category": "power",
-      "no": 42,
-      "image": "assets/gear-26.jpg"
-    },
-    {
       "id": "gear-31",
       "name": "延長コードリール",
       "quantity": "1個",
       "note": "",
       "category": "power",
-      "no": 43,
+      "no": 42,
       "image": "assets/gear-31.jpg"
     },
     {
@@ -451,8 +442,17 @@ window.CAMP_DATA = {
       "quantity": "2本",
       "note": "",
       "category": "power",
-      "no": 44,
+      "no": 43,
       "image": "assets/gear-56.jpg"
+    },
+    {
+      "id": "gear-26",
+      "name": "ポタ電用バッグ",
+      "quantity": "1個",
+      "note": "収納用バッグとして使用。",
+      "category": "storage",
+      "no": 44,
+      "image": "assets/gear-26.jpg"
     },
     {
       "id": "gear-05",
@@ -483,7 +483,7 @@ window.CAMP_DATA = {
     },
     {
       "id": "gear-29",
-      "name": "収納ボックス（カーキ）",
+      "name": "アルミコンテナボックス",
       "quantity": "1個",
       "note": "",
       "category": "storage",
