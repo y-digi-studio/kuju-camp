@@ -57,13 +57,49 @@ window.CAMP_DATA = {
       "image": "assets/gear-03.jpg"
     }
   ],
+  "storages": [
+    {
+      "id": "roof",
+      "name": "ルーフボックス",
+      "icon": "🚙",
+      "description": "ルーフにまとめる道具"
+    },
+    {
+      "id": "powerbag",
+      "name": "ポタ電用バッグ",
+      "icon": "👜",
+      "description": "バッグにまとめる道具"
+    },
+    {
+      "id": "aluminum",
+      "name": "アルミコンテナボックス",
+      "icon": "📦",
+      "description": "コンテナにまとめる道具"
+    },
+    {
+      "id": "trunk",
+      "name": "トランク",
+      "icon": "🚗",
+      "description": "トランクに積む荷物"
+    },
+    {
+      "id": "vehicle",
+      "name": "車両本体",
+      "icon": "🚙",
+      "description": "収納対象外の車両"
+    }
+  ],
+  "inventoryUpdated": "2026-11-03",
   "items": [
     {
       "id": "gear-17",
       "name": "タープセット",
       "quantity": "1セット",
-      "note": "",
+      "note": "ペグ8本",
       "category": "setup",
+      "storage": "ルーフボックス",
+      "availability": "あり",
+      "loading": "未確認",
       "no": 1,
       "image": "assets/gear-17.jpg"
     },
@@ -71,8 +107,11 @@ window.CAMP_DATA = {
       "id": "gear-19",
       "name": "テント用ペグセット",
       "quantity": "1セット",
-      "note": "セット内の本数は要確認。",
+      "note": "ペグ8本（予備）",
       "category": "setup",
+      "storage": "ルーフボックス",
+      "availability": "あり",
+      "loading": "未確認",
       "no": 2,
       "image": "assets/gear-19.jpg"
     },
@@ -82,6 +121,9 @@ window.CAMP_DATA = {
       "quantity": "1本",
       "note": "",
       "category": "setup",
+      "storage": "ルーフボックス",
+      "availability": "あり",
+      "loading": "未確認",
       "no": 3,
       "image": "assets/gear-24.jpg"
     },
@@ -91,6 +133,9 @@ window.CAMP_DATA = {
       "quantity": "2脚",
       "note": "",
       "category": "setup",
+      "storage": "ルーフボックス",
+      "availability": "あり",
+      "loading": "未確認",
       "no": 4,
       "image": "assets/gear-35.jpg"
     },
@@ -98,8 +143,11 @@ window.CAMP_DATA = {
       "id": "gear-11",
       "name": "カラビナセット",
       "quantity": "1セット",
-      "note": "セット内の個数は要確認。",
+      "note": "タープ用",
       "category": "setup",
+      "storage": "ポタ電用バッグ",
+      "availability": "あり",
+      "loading": "未確認",
       "no": 5,
       "image": "assets/gear-11.jpg"
     },
@@ -107,8 +155,11 @@ window.CAMP_DATA = {
       "id": "gear-21",
       "name": "フック付きクリップ",
       "quantity": "1個",
-      "note": "",
+      "note": "ごみ用フック",
       "category": "setup",
+      "storage": "ポタ電用バッグ",
+      "availability": "あり",
+      "loading": "未確認",
       "no": 6,
       "image": "assets/gear-21.jpg"
     },
@@ -116,8 +167,11 @@ window.CAMP_DATA = {
       "id": "gear-54",
       "name": "フィールドラック（収納バッグ付き）",
       "quantity": "1セット",
-      "note": "セット内の台数は要確認。",
+      "note": "アルミコンテナボックス用",
       "category": "setup",
+      "storage": "アルミコンテナボックス",
+      "availability": "あり",
+      "loading": "未確認",
       "no": 7,
       "image": "assets/gear-54.jpg"
     },
@@ -125,8 +179,11 @@ window.CAMP_DATA = {
       "id": "gear-57",
       "name": "折りたたみスツール",
       "quantity": "1脚",
-      "note": "",
+      "note": "ルーフボックス用",
       "category": "setup",
+      "storage": "トランク",
+      "availability": "あり",
+      "loading": "未確認",
       "no": 8,
       "image": "assets/gear-57.webp"
     },
@@ -136,6 +193,9 @@ window.CAMP_DATA = {
       "quantity": "2個",
       "note": "",
       "category": "sleep",
+      "storage": "ルーフボックス",
+      "availability": "あり",
+      "loading": "未確認",
       "no": 9,
       "image": "assets/gear-30.jpg"
     },
@@ -145,6 +205,9 @@ window.CAMP_DATA = {
       "quantity": "1枚",
       "note": "",
       "category": "sleep",
+      "storage": "トランク",
+      "availability": "あり",
+      "loading": "未確認",
       "no": 10,
       "image": "assets/gear-48.jpg"
     },
@@ -154,6 +217,9 @@ window.CAMP_DATA = {
       "quantity": "1台",
       "note": "",
       "category": "kitchen",
+      "storage": "アルミコンテナボックス",
+      "availability": "あり",
+      "loading": "未確認",
       "no": 11,
       "image": "assets/gear-00.jpg"
     },
@@ -163,6 +229,9 @@ window.CAMP_DATA = {
       "quantity": "1個",
       "note": "",
       "category": "kitchen",
+      "storage": "アルミコンテナボックス",
+      "availability": "あり",
+      "loading": "未確認",
       "no": 12,
       "image": "assets/gear-04.jpg"
     },
@@ -172,6 +241,9 @@ window.CAMP_DATA = {
       "quantity": "1本",
       "note": "",
       "category": "kitchen",
+      "storage": "アルミコンテナボックス",
+      "availability": "あり",
+      "loading": "未確認",
       "no": 13,
       "image": "assets/gear-06.jpg"
     },
@@ -181,6 +253,9 @@ window.CAMP_DATA = {
       "quantity": "1個",
       "note": "",
       "category": "kitchen",
+      "storage": "アルミコンテナボックス",
+      "availability": "あり",
+      "loading": "未確認",
       "no": 14,
       "image": "assets/gear-07.jpg"
     },
@@ -190,6 +265,9 @@ window.CAMP_DATA = {
       "quantity": "1セット",
       "note": "セット内の点数は要確認。",
       "category": "kitchen",
+      "storage": "アルミコンテナボックス",
+      "availability": "あり",
+      "loading": "未確認",
       "no": 15,
       "image": "assets/gear-09.jpg"
     },
@@ -199,6 +277,9 @@ window.CAMP_DATA = {
       "quantity": "1巻",
       "note": "",
       "category": "kitchen",
+      "storage": "ポタ電用バッグ",
+      "availability": "あり",
+      "loading": "未確認",
       "no": 16,
       "image": "assets/gear-13.jpg"
     },
@@ -206,8 +287,11 @@ window.CAMP_DATA = {
       "id": "gear-15",
       "name": "ステンレスピッチャー",
       "quantity": "1個",
-      "note": "",
+      "note": "コーヒー用",
       "category": "kitchen",
+      "storage": "アルミコンテナボックス",
+      "availability": "あり",
+      "loading": "未確認",
       "no": 17,
       "image": "assets/gear-15.jpg"
     },
@@ -217,7 +301,10 @@ window.CAMP_DATA = {
       "quantity": "2個",
       "note": "",
       "category": "kitchen",
-      "no": 18,
+      "storage": "アルミコンテナボックス",
+      "availability": "あり",
+      "loading": "未確認",
+      "no": 19,
       "image": "assets/gear-18.jpg"
     },
     {
@@ -226,7 +313,10 @@ window.CAMP_DATA = {
       "quantity": "1個",
       "note": "",
       "category": "kitchen",
-      "no": 19,
+      "storage": "アルミコンテナボックス",
+      "availability": "あり",
+      "loading": "未確認",
+      "no": 20,
       "image": "assets/gear-22.jpg"
     },
     {
@@ -235,16 +325,22 @@ window.CAMP_DATA = {
       "quantity": "1個",
       "note": "",
       "category": "kitchen",
-      "no": 20,
+      "storage": "ポタ電用バッグ",
+      "availability": "あり",
+      "loading": "未確認",
+      "no": 21,
       "image": "assets/gear-28.jpg"
     },
     {
       "id": "gear-45",
       "name": "車載冷蔵庫（BougeRV）",
       "quantity": "1台",
-      "note": "",
+      "note": "車載用ケーブル、ポタ電用ケーブル",
       "category": "kitchen",
-      "no": 21,
+      "storage": "トランク",
+      "availability": "あり",
+      "loading": "未確認",
+      "no": 22,
       "image": "assets/gear-45.jpg"
     },
     {
@@ -253,16 +349,22 @@ window.CAMP_DATA = {
       "quantity": "1セット",
       "note": "セット内の個数は要確認。",
       "category": "kitchen",
-      "no": 22,
+      "storage": "アルミコンテナボックス",
+      "availability": "あり",
+      "loading": "未確認",
+      "no": 23,
       "image": "assets/gear-50.jpg"
     },
     {
       "id": "gear-52",
       "name": "ドリップケトル",
       "quantity": "1個",
-      "note": "",
+      "note": "湯沸かし・コーヒー用",
       "category": "kitchen",
-      "no": 23,
+      "storage": "アルミコンテナボックス",
+      "availability": "あり",
+      "loading": "未確認",
+      "no": 24,
       "image": "assets/gear-52.jpg"
     },
     {
@@ -271,7 +373,10 @@ window.CAMP_DATA = {
       "quantity": "4個",
       "note": "",
       "category": "kitchen",
-      "no": 24,
+      "storage": "アルミコンテナボックス",
+      "availability": "あり",
+      "loading": "未確認",
+      "no": 25,
       "image": "assets/gear-53.jpg"
     },
     {
@@ -280,15 +385,21 @@ window.CAMP_DATA = {
       "quantity": "1個",
       "note": "",
       "category": "kitchen",
-      "no": 25,
+      "storage": "アルミコンテナボックス",
+      "availability": "あり",
+      "loading": "未確認",
+      "no": 37,
       "image": "assets/gear-51.jpg"
     },
     {
       "id": "gear-12",
       "name": "ガストーチ・ガスボンベ",
       "quantity": "1セット",
-      "note": "トーチとガスボンベ。",
+      "note": "",
       "category": "fire",
+      "storage": "ポタ電用バッグ",
+      "availability": "あり",
+      "loading": "未確認",
       "no": 26,
       "image": "assets/gear-12.jpg"
     },
@@ -298,6 +409,9 @@ window.CAMP_DATA = {
       "quantity": "1本",
       "note": "",
       "category": "fire",
+      "storage": "ポタ電用バッグ",
+      "availability": "あり",
+      "loading": "未確認",
       "no": 27,
       "image": "assets/gear-20.jpg"
     },
@@ -305,8 +419,11 @@ window.CAMP_DATA = {
       "id": "gear-32",
       "name": "手斧",
       "quantity": "1本",
-      "note": "",
+      "note": "薪割り用",
       "category": "fire",
+      "storage": "ポタ電用バッグ",
+      "availability": "あり",
+      "loading": "未確認",
       "no": 28,
       "image": "assets/gear-32.jpg"
     },
@@ -316,6 +433,9 @@ window.CAMP_DATA = {
       "quantity": "1枚",
       "note": "",
       "category": "fire",
+      "storage": "ポタ電用バッグ",
+      "availability": "あり",
+      "loading": "未確認",
       "no": 29,
       "image": "assets/gear-34.jpg"
     },
@@ -325,6 +445,9 @@ window.CAMP_DATA = {
       "quantity": "1本",
       "note": "",
       "category": "fire",
+      "storage": "ルーフボックス",
+      "availability": "あり",
+      "loading": "未確認",
       "no": 30,
       "image": "assets/gear-37.jpg"
     },
@@ -334,6 +457,9 @@ window.CAMP_DATA = {
       "quantity": "1本",
       "note": "",
       "category": "fire",
+      "storage": "ポタ電用バッグ",
+      "availability": "あり",
+      "loading": "未確認",
       "no": 31,
       "image": "assets/gear-38.jpg"
     },
@@ -343,6 +469,9 @@ window.CAMP_DATA = {
       "quantity": "1個",
       "note": "",
       "category": "fire",
+      "storage": "トランク",
+      "availability": "あり",
+      "loading": "未確認",
       "no": 32,
       "image": "assets/gear-39.jpg"
     },
@@ -352,6 +481,9 @@ window.CAMP_DATA = {
       "quantity": "1台",
       "note": "",
       "category": "fire",
+      "storage": "トランク",
+      "availability": "あり",
+      "loading": "未確認",
       "no": 33,
       "image": "assets/gear-40.jpg"
     },
@@ -361,6 +493,9 @@ window.CAMP_DATA = {
       "quantity": "1個",
       "note": "収納バッグを含む。",
       "category": "fire",
+      "storage": "トランク",
+      "availability": "あり",
+      "loading": "未確認",
       "no": 34,
       "image": "assets/gear-41.jpg"
     },
@@ -368,8 +503,11 @@ window.CAMP_DATA = {
       "id": "gear-43",
       "name": "薪・薪バッグ",
       "quantity": "1式",
-      "note": "薪の本数・量は要確認。",
+      "note": "",
       "category": "fire",
+      "storage": "ルーフボックス",
+      "availability": "あり",
+      "loading": "未確認",
       "no": 35,
       "image": "assets/gear-43.jpg"
     },
@@ -379,6 +517,9 @@ window.CAMP_DATA = {
       "quantity": "1組",
       "note": "",
       "category": "fire",
+      "storage": "ポタ電用バッグ",
+      "availability": "あり",
+      "loading": "未確認",
       "no": 36,
       "image": "assets/gear-49.jpg"
     },
@@ -388,7 +529,10 @@ window.CAMP_DATA = {
       "quantity": "1個",
       "note": "",
       "category": "power",
-      "no": 37,
+      "storage": "ポタ電用バッグ",
+      "availability": "あり",
+      "loading": "未確認",
+      "no": 38,
       "image": "assets/gear-01.jpg"
     },
     {
@@ -397,7 +541,10 @@ window.CAMP_DATA = {
       "quantity": "1個",
       "note": "",
       "category": "power",
-      "no": 38,
+      "storage": "ポタ電用バッグ",
+      "availability": "あり",
+      "loading": "未確認",
+      "no": 39,
       "image": "assets/gear-02.jpg"
     },
     {
@@ -406,7 +553,10 @@ window.CAMP_DATA = {
       "quantity": "1台",
       "note": "",
       "category": "power",
-      "no": 39,
+      "storage": "アルミコンテナボックス",
+      "availability": "あり",
+      "loading": "未確認",
+      "no": 40,
       "image": "assets/gear-23.jpg"
     },
     {
@@ -415,7 +565,10 @@ window.CAMP_DATA = {
       "quantity": "1台",
       "note": "",
       "category": "power",
-      "no": 40,
+      "storage": "トランク",
+      "availability": "あり",
+      "loading": "未確認",
+      "no": 41,
       "image": "assets/gear-25.jpg"
     },
     {
@@ -424,34 +577,46 @@ window.CAMP_DATA = {
       "quantity": "1個",
       "note": "",
       "category": "power",
-      "no": 41,
+      "storage": "トランク",
+      "availability": "あり",
+      "loading": "未確認",
+      "no": 43,
       "image": "assets/gear-31.jpg"
     },
     {
       "id": "gear-56",
       "name": "USB Type-Cケーブル",
       "quantity": "2本",
-      "note": "",
+      "note": "iPhone充電用",
       "category": "power",
-      "no": 42,
+      "storage": "アルミコンテナボックス",
+      "availability": "あり",
+      "loading": "未確認",
+      "no": 44,
       "image": "assets/gear-56.jpg"
     },
     {
       "id": "gear-16",
       "name": "ソフトクーラーバッグ",
       "quantity": "1個",
-      "note": "",
+      "note": "食材用",
       "category": "storage",
-      "no": 43,
+      "storage": "トランク",
+      "availability": "あり",
+      "loading": "未確認",
+      "no": 18,
       "image": "assets/gear-16.jpg"
     },
     {
       "id": "gear-26",
       "name": "ポタ電用バッグ",
       "quantity": "1個",
-      "note": "収納用バッグとして使用。",
+      "note": "道具収納バッグとして使用",
       "category": "storage",
-      "no": 44,
+      "storage": "トランク",
+      "availability": "あり",
+      "loading": "未確認",
+      "no": 42,
       "image": "assets/gear-26.jpg"
     },
     {
@@ -460,6 +625,9 @@ window.CAMP_DATA = {
       "quantity": "1本",
       "note": "",
       "category": "storage",
+      "storage": "ポタ電用バッグ",
+      "availability": "あり",
+      "loading": "未確認",
       "no": 45,
       "image": "assets/gear-05.jpg"
     },
@@ -467,8 +635,11 @@ window.CAMP_DATA = {
       "id": "gear-10",
       "name": "カメラバッグ",
       "quantity": "1個",
-      "note": "",
+      "note": "三脚も忘れず！",
       "category": "storage",
+      "storage": "トランク",
+      "availability": "あり",
+      "loading": "未確認",
       "no": 46,
       "image": "assets/gear-10.jpg"
     },
@@ -478,6 +649,9 @@ window.CAMP_DATA = {
       "quantity": "1個",
       "note": "",
       "category": "storage",
+      "storage": "アルミコンテナボックス",
+      "availability": "あり",
+      "loading": "未確認",
       "no": 47,
       "image": "assets/gear-27.jpg"
     },
@@ -485,8 +659,11 @@ window.CAMP_DATA = {
       "id": "gear-29",
       "name": "アルミコンテナボックス",
       "quantity": "1個",
-      "note": "",
+      "note": "食材用",
       "category": "storage",
+      "storage": "トランク",
+      "availability": "あり",
+      "loading": "未確認",
       "no": 48,
       "image": "assets/gear-29.jpg"
     },
@@ -494,8 +671,11 @@ window.CAMP_DATA = {
       "id": "gear-33",
       "name": "折りたたみコンテナ",
       "quantity": "1個",
-      "note": "",
+      "note": "予備",
       "category": "storage",
+      "storage": "トランク",
+      "availability": "あり",
+      "loading": "未確認",
       "no": 49,
       "image": "assets/gear-33.jpg"
     },
@@ -503,8 +683,11 @@ window.CAMP_DATA = {
       "id": "gear-36",
       "name": "折りたたみバケツ",
       "quantity": "1個",
-      "note": "",
+      "note": "ごみ入れ",
       "category": "storage",
+      "storage": "ポタ電用バッグ",
+      "availability": "あり",
+      "loading": "未確認",
       "no": 50,
       "image": "assets/gear-36.jpg"
     },
@@ -514,6 +697,9 @@ window.CAMP_DATA = {
       "quantity": "1セット",
       "note": "セット内の本数は要確認。",
       "category": "storage",
+      "storage": "ポタ電用バッグ",
+      "availability": "あり",
+      "loading": "未確認",
       "no": 51,
       "image": "assets/gear-42.jpg"
     },
@@ -523,6 +709,9 @@ window.CAMP_DATA = {
       "quantity": "1組",
       "note": "",
       "category": "storage",
+      "storage": "ポタ電用バッグ",
+      "availability": "あり",
+      "loading": "未確認",
       "no": 52,
       "image": "assets/gear-46.jpg"
     },
@@ -530,10 +719,37 @@ window.CAMP_DATA = {
       "id": "gear-55",
       "name": "ドライバッグ（4L）",
       "quantity": "1個",
-      "note": "",
+      "note": "生ごみ入れ",
       "category": "storage",
+      "storage": "ポタ電用バッグ",
+      "availability": "あり",
+      "loading": "未確認",
       "no": 53,
       "image": "assets/gear-55.jpg"
+    },
+    {
+      "id": "gear-59",
+      "name": "ゴム手袋",
+      "quantity": "1組",
+      "note": "",
+      "category": "storage",
+      "storage": "ポタ電用バッグ",
+      "availability": "未確認",
+      "loading": "未確認",
+      "no": 60,
+      "image": null
+    },
+    {
+      "id": "gear-60",
+      "name": "三脚",
+      "quantity": "1個",
+      "note": "",
+      "category": "storage",
+      "storage": "トランク",
+      "availability": "未確認",
+      "loading": "未確認",
+      "no": 61,
+      "image": null
     },
     {
       "id": "gear-08",
@@ -541,6 +757,9 @@ window.CAMP_DATA = {
       "quantity": "1枚",
       "note": "",
       "category": "car",
+      "storage": "ルーフボックス",
+      "availability": "あり",
+      "loading": "未確認",
       "no": 54,
       "image": "assets/gear-08.jpg"
     },
@@ -550,6 +769,9 @@ window.CAMP_DATA = {
       "quantity": "1台",
       "note": "",
       "category": "car",
+      "storage": "ポタ電用バッグ",
+      "availability": "あり",
+      "loading": "未確認",
       "no": 55,
       "image": "assets/gear-47.jpg"
     },
@@ -559,6 +781,9 @@ window.CAMP_DATA = {
       "quantity": "1台",
       "note": "",
       "category": "car",
+      "storage": "",
+      "availability": "あり",
+      "loading": "未確認",
       "no": 56,
       "image": "assets/gear-03.jpg"
     },
@@ -568,6 +793,9 @@ window.CAMP_DATA = {
       "quantity": "1式",
       "note": "",
       "category": "car",
+      "storage": "ルーフボックス",
+      "availability": "あり",
+      "loading": "未確認",
       "no": 57,
       "image": "assets/gear-14.jpg"
     },
@@ -577,8 +805,23 @@ window.CAMP_DATA = {
       "quantity": "1枚",
       "note": "",
       "category": "car",
+      "storage": "トランク",
+      "availability": "あり",
+      "loading": "未確認",
       "no": 58,
       "image": "assets/gear-44.jpg"
+    },
+    {
+      "id": "gear-58",
+      "name": "アルミマット",
+      "quantity": "1枚",
+      "note": "",
+      "category": "car",
+      "storage": "ルーフボックス",
+      "availability": "未確認",
+      "loading": "未確認",
+      "no": 59,
+      "image": null
     }
   ]
 };
