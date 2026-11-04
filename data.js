@@ -101,7 +101,7 @@ window.CAMP_DATA = {
       "description": "車載冷蔵庫に入れる食材"
     }
   ],
-  "inventoryUpdated": "2026-11-04",
+  "inventoryUpdated": "2026-11-05",
   "items": [
     {
       "id": "gear-17",
@@ -718,8 +718,8 @@ window.CAMP_DATA = {
     {
       "id": "gear-92",
       "name": "卵",
-      "quantity": "2個",
-      "note": "レシピの必要量。すき焼き用。食べる直前まで冷蔵。",
+      "quantity": "4個",
+      "note": "レシピの必要量。すき焼き用2個＋ホットサンドの目玉焼き用2個。食べる直前まで冷蔵。",
       "category": "kitchen",
       "storage": "冷蔵庫",
       "availability": "未確認",
@@ -833,6 +833,18 @@ window.CAMP_DATA = {
       "availability": "未確認",
       "loading": "未確認",
       "no": 102,
+      "image": null
+    },
+    {
+      "id": "gear-102",
+      "name": "レタス",
+      "quantity": "2枚",
+      "note": "レシピの必要量。ホットサンド2組分。1組につき1枚。洗って水気をよくふく。",
+      "category": "kitchen",
+      "storage": "冷蔵庫",
+      "availability": "未確認",
+      "loading": "未確認",
+      "no": 103,
       "image": null
     },
     {
