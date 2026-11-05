@@ -357,7 +357,7 @@ window.CAMP_DATA = {
     },
     {
       "id": "gear-28",
-      "name": "マルチパン",
+      "name": "マルチグリドル",
       "quantity": "1個",
       "note": "",
       "category": "kitchen",
@@ -382,8 +382,8 @@ window.CAMP_DATA = {
     {
       "id": "gear-50",
       "name": "シェラカップ",
-      "quantity": "1セット",
-      "note": "セット内の個数は要確認。",
+      "quantity": "2個",
+      "note": "",
       "category": "kitchen",
       "storage": "アルミコンテナボックス",
       "availability": "あり",
@@ -430,8 +430,8 @@ window.CAMP_DATA = {
     {
       "id": "gear-63",
       "name": "トング",
-      "quantity": "1セット",
-      "note": "セット内の本数は要確認。",
+      "quantity": "2本",
+      "note": "",
       "category": "kitchen",
       "storage": "ソフトクーラーバッグ",
       "availability": "未確認",
@@ -934,8 +934,8 @@ window.CAMP_DATA = {
     {
       "id": "gear-40",
       "name": "焚き火台テーブル",
-      "quantity": "1台",
-      "note": "",
+      "quantity": "1セット（4台）",
+      "note": "4台で1セット。",
       "category": "fire",
       "storage": "トランク",
       "availability": "あり",
