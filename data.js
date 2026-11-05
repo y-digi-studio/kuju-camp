@@ -245,7 +245,7 @@ window.CAMP_DATA = {
       "availability": "未確認",
       "loading": "未確認",
       "no": 73,
-      "image": null
+      "image": "assets/gear-72.jpg"
     },
     {
       "id": "gear-00",
@@ -485,7 +485,7 @@ window.CAMP_DATA = {
       "availability": "未確認",
       "loading": "未確認",
       "no": 72,
-      "image": null
+      "image": "assets/gear-71.jpg"
     },
     {
       "id": "gear-73",
@@ -989,7 +989,7 @@ window.CAMP_DATA = {
       "availability": "未確認",
       "loading": "未確認",
       "no": 67,
-      "image": null
+      "image": "assets/gear-66.jpg"
     },
     {
       "id": "gear-01",
@@ -1217,7 +1217,7 @@ window.CAMP_DATA = {
       "availability": "未確認",
       "loading": "未確認",
       "no": 60,
-      "image": null
+      "image": "assets/gear-59.jpg"
     },
     {
       "id": "gear-60",
@@ -1325,7 +1325,7 @@ window.CAMP_DATA = {
       "availability": "未確認",
       "loading": "未確認",
       "no": 68,
-      "image": null
+      "image": "assets/gear-67.jpg"
     },
     {
       "id": "gear-68",
@@ -1337,7 +1337,7 @@ window.CAMP_DATA = {
       "availability": "未確認",
       "loading": "未確認",
       "no": 69,
-      "image": null
+      "image": "assets/gear-68.jpg"
     }
   ]
 };
