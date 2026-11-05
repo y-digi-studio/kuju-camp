@@ -238,8 +238,8 @@ window.CAMP_DATA = {
     {
       "id": "gear-72",
       "name": "電気ストーブ",
-      "quantity": "要確認",
-      "note": "数量は未確認。",
+      "quantity": "1台",
+      "note": "",
       "category": "sleep",
       "storage": "折りたたみコンテナ",
       "availability": "未確認",
@@ -1115,7 +1115,7 @@ window.CAMP_DATA = {
       "id": "gear-10",
       "name": "カメラバッグ",
       "quantity": "1個",
-      "note": "三脚も忘れず！",
+      "note": "SONY α7Ⅳ,TAMRON ズームレンズ　28-75mm F2.8,広角単焦点レンズ FE 20mm F1.8G 他",
       "category": "storage",
       "storage": "トランク",
       "availability": "あり",
@@ -1161,7 +1161,7 @@ window.CAMP_DATA = {
     },
     {
       "id": "gear-36",
-      "name": "折りたたみバケツ",
+      "name": "折りたたみゴミ入れ",
       "quantity": "1個",
       "note": "ごみ入れ",
       "category": "storage",
