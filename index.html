@@ -2,12 +2,13 @@
 <html lang="ja">
 <head>
 <meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
-<meta name="theme-color" content="#294d3e">
+<meta name="referrer" content="no-referrer"><meta name="theme-color" content="#294d3e">
 <meta name="description" content="九重キャンプの道具・収納先、キャンプ場情報、行程とマップ、料理をひとつに。">
 <title>九重キャンプ情報まとめ</title>
-<link rel="icon" href="favicon.svg" type="image/svg+xml"><link rel="stylesheet" href="style.css?v=10">
-<script src="data.js?v=18" defer></script><script src="app.js?v=14" defer></script>
+<link rel="icon" href="favicon.svg" type="image/svg+xml"><link rel="stylesheet" href="style.css?v=19">
+<script src="shared-config.js?v=19" defer></script><script src="data.js?v=18" defer></script><script src="app.js?v=19" defer></script>
 <link rel="stylesheet" href="trip.css?v=15"><script src="trip.js?v=18" defer></script>
+<link rel="stylesheet" href="shared.css?v=19"><script src="shared.js?v=19" defer></script>
 </head>
 <body>
 <a class="skip" href="#explorer">道具を探す</a>
@@ -17,16 +18,17 @@
 <nav class="trip-nav" aria-label="キャンプ情報"><button data-page="gear" aria-pressed="true">道具一覧</button><button data-page="camp" aria-pressed="false">キャンプ場情報</button><button data-page="journey" aria-pressed="false">行程・マップ</button><button data-page="food" aria-pressed="false">料理</button></nav>
 <section id="explorer" data-page-panel="gear" aria-label="持ち物を探す">
 <div class="explore-top"><div><p class="eyebrow">EXPLORE YOUR GEAR</p><h2>道具を探す</h2></div><div class="view-switch" role="group" aria-label="表示方法"><button id="map-view" class="active" aria-pressed="true"><span aria-hidden="true">⌘</span> マップ</button><button id="list-view" aria-pressed="false"><span aria-hidden="true">☷</span> 一覧</button></div></div>
+<div class="shared-bar"><div><strong id="shared-status" role="status" aria-live="polite">共有リンクを確認しています…</strong><small id="shared-hint">共有先への接続前は公開時の一覧を表示します。</small></div><div class="shared-actions"><button id="add-gear" disabled>＋ 持ち物を追加</button><button id="shared-link-button">共有リンク</button><button id="trash-button" disabled>ゴミ箱</button><button id="refresh-shared" disabled>更新</button></div></div>
 <div class="group-switch" role="group" aria-label="探し方"><button id="category-group" class="active" aria-pressed="true">カテゴリー別</button><button id="storage-group" aria-pressed="false">収納場所別</button></div>
 <div class="toolbar"><nav id="breadcrumbs" aria-label="現在の場所"></nav><label class="search"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="10.5" cy="10.5" r="6.5"/><path d="m16 16 5 5"/></svg><input type="search" id="search" placeholder="道具の名前で検索" autocomplete="off" aria-label="道具の名前で検索"><kbd>/</kbd></label></div>
 <div id="live-status" class="sr-only" role="status" aria-live="polite"></div>
 <div id="map-panel"><div class="map-caption"><span><span class="map-dot"></span><span id="map-instruction">カテゴリーを選んで、道具へ。</span></span><button id="map-home" hidden>全体マップに戻る ↗</button></div><div id="mindmap" class="mindmap" aria-label="カテゴリーのマインドマップ"></div><div class="map-footer"><span>● キャンプ → カテゴリー → 道具</span><span>気になるノードをタップ</span></div></div>
 <section id="results" aria-label="物品一覧"></section>
-<div class="usage-note"><span aria-hidden="true">↳</span><p>収納先・数量・確認状況は2026年11月5日のExcelを反映しています。画像のない未確認の荷物も掲載しています。食材の数量は3品のレシピの必要量です。有無・積込確認は道具の詳細で選択でき、このブラウザーに保存されます。</p></div>
+<div class="usage-note"><span aria-hidden="true">↳</span><p>収納先・数量・確認状況は2026年11月5日のExcelを反映しています。画像のない未確認の荷物も掲載しています。食材の数量は3品のレシピの必要量です。共有用リンクから接続すると、持ち物の追加・編集・削除と、有無・積込確認を仲間と共有できます。Excelへの自動反映はありません。</p></div>
 </section>
 <section id="camp-info" data-page-panel="camp" hidden></section><section id="journey" data-page-panel="journey" hidden></section><section id="food" data-page-panel="food" hidden></section>
 </main>
 <footer><a class="footer-brand" href="#">KUJU CAMP</a><span>道具を揃えて、いいキャンプを。</span><span data-gear-summary>103 GEAR / 7 CATEGORIES</span></footer>
-<dialog id="item-dialog" aria-labelledby="detail-name"><div class="dialog-top"><span id="detail-category"></span><button class="icon-button" id="close-dialog" aria-label="詳細を閉じる">✕</button></div><div class="detail-layout"><div class="detail-photo"><img id="detail-image" alt=""><div id="detail-photo-missing" class="detail-photo-missing" hidden><span aria-hidden="true">▧</span><strong>写真未登録</strong><p>画像はまだ登録されていません。</p></div></div><div class="detail-info"><p class="eyebrow" id="detail-number"></p><h2 id="detail-name"></h2><dl><div><dt>収納場所・ボックス</dt><dd id="detail-storage"></dd></div><div><dt><label for="detail-availability">有無確認</label></dt><dd><select id="detail-availability"><option>未確認</option><option>あり</option><option>なし</option><option>今回不要</option></select></dd></div><div><dt><label for="detail-loading">積込確認</label></dt><dd><select id="detail-loading"><option>未確認</option><option>積込済</option><option>未積込</option><option>今回不要</option></select></dd></div><div><dt>数量</dt><dd id="detail-quantity"></dd></div><div><dt>備考</dt><dd id="detail-note" style="white-space:pre-wrap;overflow-wrap:anywhere"></dd></div></dl><p class="check-save-hint">選択内容はこのブラウザーに自動保存されます。ほかの端末・仲間の画面やExcelには自動反映されません。</p><p id="check-save-status" class="check-save-status" role="status" aria-live="polite"></p></div></div><div class="dialog-bottom"><button id="previous-item">← 前の道具</button><span id="detail-position"></span><button id="next-item">次の道具 →</button></div></dialog>
+<dialog id="item-dialog" aria-labelledby="detail-name"><div class="dialog-top"><span id="detail-category"></span><button class="icon-button" id="close-dialog" aria-label="詳細を閉じる">✕</button></div><div class="detail-layout"><div class="detail-photo"><img id="detail-image" alt=""><div id="detail-photo-missing" class="detail-photo-missing" hidden><span aria-hidden="true">▧</span><strong>写真未登録</strong><p>画像はまだ登録されていません。</p></div></div><div class="detail-info"><p class="eyebrow" id="detail-number"></p><h2 id="detail-name"></h2><dl><div><dt>収納場所・ボックス</dt><dd id="detail-storage"></dd></div><div><dt><label for="detail-availability">有無確認</label></dt><dd><select id="detail-availability" disabled><option>未確認</option><option>あり</option><option>なし</option><option>今回不要</option></select></dd></div><div><dt><label for="detail-loading">積込確認</label></dt><dd><select id="detail-loading" disabled><option>未確認</option><option>積込済</option><option>未積込</option><option>今回不要</option></select></dd></div><div><dt>数量</dt><dd id="detail-quantity"></dd></div><div><dt>備考</dt><dd id="detail-note" style="white-space:pre-wrap;overflow-wrap:anywhere"></dd></div></dl><p class="check-save-hint">共有用リンクから接続すると、有無・積込確認も仲間と共有されます。Excelへの自動反映はありません。</p><p id="check-save-status" class="check-save-status" role="status" aria-live="polite"></p></div></div><div class="detail-edit-actions"><button id="edit-gear" disabled>内容を編集</button><button id="delete-gear" class="danger-text" disabled>削除</button></div><div class="dialog-bottom"><button id="previous-item">← 前の道具</button><span id="detail-position"></span><button id="next-item">次の道具 →</button></div></dialog>
 <noscript><p>マップの操作にはJavaScriptを有効にしてください。</p></noscript>
 </body></html>

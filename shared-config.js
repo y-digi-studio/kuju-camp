@@ -1,0 +1,1 @@
+window.CAMP_SHARED_CONFIG={apiBase:'https://kuju-camp-shared-storage.dancingferret2.chatgpt.site/api/shared'};
