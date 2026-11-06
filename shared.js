@@ -2,7 +2,7 @@
 'use strict';
 const cfg=window.CAMP_SHARED_CONFIG;if(!cfg)return;
 const $=s=>document.querySelector(s),esc=s=>String(s).replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
-const TOKEN_KEY='kuju-camp-shared-edit-v1',LINK_BASE=location.origin+location.pathname+'?v=19';
+const TOKEN_KEY='kuju-camp-shared-edit-v1',LINK_BASE=location.origin+location.pathname+'?v=20';
 let token='',connected=false,busy=false,items=[],rev=null,polling=null,editor=null,photoFile=null,photoRemoved=false,pendingImage=null,previewUrl=null,failedDraft=false;
 const cats=window.CAMP_DATA.categories,storages=window.CAMP_DATA.storages;
 const opts=(list)=>list.map(v=>`<option value="${esc(v)}">${esc(v)}</option>`).join('');
@@ -20,7 +20,7 @@ function apply(data){if(data.unchanged)return;items=data.items;rev=data.revision
 async function refresh(force=false){if(!token)return;if(polling){await polling;if(force)return refresh(true);return;}polling=(async()=>{try{const data=await request('/items'+(!force&&rev!==null?'?since='+rev:''));apply(data);connected=true;status('共有中','最終確認 '+new Date().toLocaleTimeString('ja-JP',{hour:'2-digit',minute:'2-digit'})+' ・変更は仲間と共有されます。');enable();}catch(e){status('共有先への接続を確認できません',e.message+' 最後に取得した一覧を表示しています。');if(e.status===401){connected=false;enable();}throw e;}})();try{await polling;}finally{polling=null;}}
 async function connect(value){const candidate=value.trim();let next=candidate;if(candidate.startsWith('http')){let url;try{url=new URL(candidate);}catch{throw Error('共有用リンクを確認してください。');}if(url.origin!==location.origin||url.pathname!==location.pathname)throw Error('このキャンプアプリの共有用リンクを入力してください。');next=new URLSearchParams(url.hash.slice(1)).get('edit')||'';}if(!/^[A-Za-z0-9_-]{32,128}$/.test(next))throw Error('共有用リンクを確認してください。');const previous=token;token=next;rev=null;try{const data=await request('/items');connected=true;apply(data);try{localStorage.setItem(TOKEN_KEY,token);}catch{$('#share-message').textContent='この端末に接続情報を保存できません。次回も共有リンクから開いてください。';}status('共有中','変更は仲間と共有されます。');enable();}catch(e){token=previous;throw e;}}
 function current(id){return items.find(x=>x.id===id&&!x.deletedAt);}
-function messageError(e,target){$(target).textContent=e.message;if(e.status===409)refresh(true).catch(()=>{});}
+function messageError(e,target){$(target).textContent=e.message;if(e.status===409)refresh(true).catch(()=>{}).finally(()=>{$(target).textContent=e.message;});}
 async function updateCheck(id,field,value){const item=current(id);if(!connected||busy||!item){$('#check-save-status').textContent='共有一覧に接続してから変更してください。';if(item)window.CAMP_APP.openDetail(id,false);return;}busy=true;enable();$('#check-save-status').textContent='共有先に保存しています…';try{await request('/items/'+id,{method:'PATCH',body:{revision:item.revision,changes:{[field]:value}}});await refresh(true);$('#check-save-status').textContent='共有先に保存しました。';}catch(e){if(current(id))window.CAMP_APP.openDetail(id,false);messageError(e,'#check-save-status');}finally{busy=false;enable();}}
 window.CAMP_SHARED={updateCheck};
 function setPhoto(src){$('#gear-preview').hidden=!src;if(src)$('#gear-preview').src=src;else $('#gear-preview').removeAttribute('src');$('#remove-photo').hidden=!src;}
